@@ -22,21 +22,44 @@
     position: relative;
     background-color: #010B24;
     width: 100vw;
-    height: 100dvh;
+    height: 100vh;
 
     @media screen and (max-width: 1024px) {
         & {
-            height: 100vh;
+            min-height: 768px;
         }
+    }
+
+    &::before {
+        position: absolute;
+        z-index: 1;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: white;
+        clip-path: polygon(
+            0% 0%, 0% 70%, 3% 65%, 5% 80%, 7% 70%, 10% 85%,
+            13% 75%, 15% 90%, 18% 65%, 20% 80%, 23% 70%,
+            25% 85%, 28% 60%, 30% 75%, 33% 65%, 35% 85%,
+            38% 70%, 40% 80%, 43% 60%, 45% 90%, 48% 65%,
+            50% 75%, 53% 70%, 55% 85%, 58% 60%, 60% 80%,
+            63% 65%, 65% 90%, 68% 70%, 70% 75%, 73% 85%,
+            75% 65%, 78% 80%, 80% 60%, 83% 70%, 85% 85%,
+            88% 75%, 90% 80%, 93% 65%, 95% 85%, 98% 70%,
+            100% 80%, 100% 0%
+        );
     }
 
     &::after {
         position: absolute;
+        z-index: 1;
         content: '';
-        bottom: 0;
+        bottom: -1px;
         left: 0;
         width: 100%;
-        height: 80px;
+        height: 60px;
         background: white;
         clip-path: polygon(
             0% 25%, 3% 35%, 5% 20%, 7% 30%, 10% 15%,
@@ -60,7 +83,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-bottom: 80px;
+        padding-block: 60px;
 
         @media screen and (max-width: 768px) {
             & {
@@ -101,7 +124,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-bottom: 80px;
+        padding-block: 60px;
 
         @media screen and (max-width: 768px) {
             & {
@@ -111,7 +134,7 @@
 
         h1 {
             color: white;
-            font-size: 10rem;
+            font-size: 18vh;
             line-height: 1;
             letter-spacing: -20px;
             font-family: 'PaletteMosaic', sans-serif;
