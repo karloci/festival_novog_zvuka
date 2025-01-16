@@ -20,12 +20,11 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
     <SectionHolderComponent color-class="green-theme" theme="dark">
         <div class="section-part green-theme">
             <h1 data-letter="?">Gdje i kada</h1>
+        </div>
+        <div class="section-part orange-theme">
             <p>Festival će se održati u siječnju 2025. godine u Sinju, živopisnom gradu bogate povijesti i kulture.</p>
             <p>Sinj pruža idealno okruženje za dva dana ispunjena glazbom, kreativnošću i druženjem. Posjetitelji će imati priliku uživati u programu koji spaja atmosferu dalmatinskog kraja i suvremenu glazbu s inovativnim umjetničkim izričajem.</p>
             <p>Program festivala odvijat će se na nekoliko pažljivo odabranih lokacija, koje će svojom akustikom i ugođajem dodatno istaknuti izvedbe. Posjetitelji mogu očekivati inspirativnu kombinaciju vrhunske glazbe i toplog gostoprimstva lokalne zajednice.</p>
-        </div>
-        <div class="section-part orange-theme">
-            <img src="../graphics/sinj.png" alt="Grad Sinj" style="width: 100%">
         </div>
     </SectionHolderComponent>
     <SectionHolderComponent color-class="pink-theme">
