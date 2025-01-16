@@ -1,19 +1,72 @@
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+import { useColorStore } from '@/stores/colorStore';
+
 const props = defineProps({
     theme: {
         type: String,
         required: false,
-        default: 'light'
+        default: 'light',
+    },
+    colorClass: {
+        type: String,
+        required: false,
+        default: 'transparent',
+    },
+});
+
+const colorStore = useColorStore();
+const sectionRef = ref(null);
+
+let observer = null;
+let lastScrollY = window.scrollY;
+
+const observeSection = (entries) => {
+    const isScrollingDown = window.scrollY > lastScrollY;
+    lastScrollY = window.scrollY;
+
+    entries.forEach((entry) => {
+        const topPosition = entry.boundingClientRect.top;
+        const bottomPosition = entry.boundingClientRect.bottom;
+        const viewportHeight = window.innerHeight;
+
+        if (isScrollingDown) {
+            if (topPosition >= 0 && topPosition <= viewportHeight * 0.5) {
+                colorStore.setActiveColor(props.colorClass);
+            }
+        } else {
+            if (bottomPosition >= 0 && bottomPosition <= viewportHeight * 0.25) {
+                colorStore.setActiveColor(props.colorClass);
+            }
+        }
+    });
+};
+
+onMounted(() => {
+    observer = new IntersectionObserver(observeSection, {
+        root: null,
+        threshold: Array.from({ length: 11 }, (_, i) => i / 10),
+    });
+
+    if (sectionRef.value) {
+        observer.observe(sectionRef.value);
     }
-})
+});
+
+onUnmounted(() => {
+    if (observer) {
+        observer.disconnect();
+    }
+    colorStore.clearVisibleSections();
+});
 </script>
 
 <template>
-<section :class="props.theme">
-    <div class="content-holder">
-        <slot/>
-    </div>
-</section>
+    <section :class="props.theme" ref="sectionRef">
+        <div class="content-holder">
+            <slot />
+        </div>
+    </section>
 </template>
 
 <style scoped>

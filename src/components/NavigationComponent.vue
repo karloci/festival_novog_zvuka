@@ -1,9 +1,12 @@
 <script setup>
+import {useColorStore} from "@/stores/colorStore.js";
+
+const colorStore = useColorStore();
 
 </script>
 
 <template>
-<nav>
+<nav :class="colorStore.activeColor">
     <ul>
         <li>
             <a href="/">Početna</a>
@@ -31,9 +34,9 @@ nav {
     height: 60px;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: transparent;
     z-index: 10;
-    padding-inline: 1em;
+    padding-inline: 2em;
 
     &::before {
         position: absolute;
@@ -43,7 +46,8 @@ nav {
         left: 0;
         width: 100%;
         height: 100px;
-        background: white;
+        background-color: transparent;
+        transition: background-color 500ms ease-in-out;
         clip-path: polygon(
             0% 0%, 0% 70%, 3% 65%, 5% 80%, 7% 70%, 10% 85%,
             13% 75%, 15% 90%, 18% 65%, 20% 80%, 23% 70%,
@@ -67,10 +71,63 @@ nav {
         padding: 0;
 
         li a {
-            color: #1A0F39;
+            color: white;
+            transition: color 500ms ease-in-out;
             display: block;
             font-size: 18px;
             font-family: 'Proxima Nova Condensed', sans-serif;
+            text-decoration-line: none;
+            text-transform: uppercase;
+        }
+    }
+
+    &.status-orange {
+        &::before {
+            background-color: #FEB101;
+        }
+
+        ul li a {
+            color: black;
+        }
+    }
+
+    &.status-pink {
+        &::before {
+            background-color: #F9029C;
+        }
+
+        ul li a {
+            color: black;
+        }
+    }
+
+    &.status-blue {
+        &::before {
+            background-color: #0358CF;
+        }
+
+        ul li a {
+            color: black;
+        }
+    }
+
+    &.status-purple {
+        &::before {
+            background-color: #902EFC;
+        }
+
+        ul li a {
+            color: black;
+        }
+    }
+
+    &.status-green {
+        &::before {
+            background-color: #036C5B;
+        }
+
+        ul li a {
+            color: black;
         }
     }
 }

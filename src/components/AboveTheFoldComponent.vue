@@ -1,9 +1,50 @@
 <script setup>
+import {useColorStore} from "@/stores/colorStore.js";
+import {onMounted, onUnmounted, ref} from "vue";
 
+const colorStore = useColorStore();
+const sectionRef = ref(null);
+
+let observer = null;
+let lastScrollY = window.scrollY;
+
+const observeSection = (entries) => {
+    const isScrollingUp = window.scrollY < lastScrollY;
+    lastScrollY = window.scrollY;
+
+    entries.forEach((entry) => {
+        const bottomPosition = entry.boundingClientRect.bottom;
+        const viewportHeight = window.innerHeight;
+
+        if (isScrollingUp) {
+            if (bottomPosition >= 0 && bottomPosition <= viewportHeight * 0.25) {
+                colorStore.setActiveColor('transparent');
+            }
+        }
+    });
+};
+
+onMounted(() => {
+    observer = new IntersectionObserver(observeSection, {
+        root: null,
+        threshold: Array.from({ length: 11 }, (_, i) => i / 10),
+    });
+
+    if (sectionRef.value) {
+        observer.observe(sectionRef.value);
+    }
+});
+
+onUnmounted(() => {
+    if (observer) {
+        observer.disconnect();
+    }
+    colorStore.clearVisibleSections();
+});
 </script>
 
 <template>
-    <section class="above-the-fold-container">
+    <section class="above-the-fold-container" ref="sectionRef">
         <div class="wallpaper-holder">
             <div class="instruments-holder">
                 <img class="saxophone-image" src="../graphics/saxophone.jpg" alt="Saksofon">
