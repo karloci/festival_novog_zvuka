@@ -35,7 +35,14 @@ nav {
     z-index: 10;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-inline: 2em;
+
+    @media screen and (max-width: 768px) {
+        & {
+            justify-content: center;
+        }
+    }
 
     ul {
         list-style: none;
@@ -51,7 +58,6 @@ nav {
                 gap: unset;
                 justify-content: space-between;
                 width: 100%;
-                padding-inline: 2em;
             }
         }
 
@@ -59,9 +65,8 @@ nav {
             color: white;
             display: block;
             font-size: 18px;
-            font-family: 'Proxima Nova Condensed', sans-serif;
+            font-family: 'Wellfleet', serif;
             text-decoration-line: none;
-            text-transform: uppercase;
         }
     }
 
@@ -94,35 +99,35 @@ nav {
 
     &.background-blue {
         &::before {
-            background: rgba(3, 88, 207, 0.5);
+            background: rgba(3, 88, 207, 0.75);
             border: 1px solid rgba(3, 88, 207, 0.3);
         }
     }
 
     &.background-pink {
         &::before {
-            background: rgba(249, 2, 156, 0.5);
+            background: rgba(249, 2, 156, 0.75);
             border: 1px solid rgba(249, 2, 156, 0.3);
         }
     }
 
     &.background-purple {
         &::before {
-            background: rgba(144, 46, 252, 0.5);
+            background: rgba(144, 46, 252, 0.75);
             border: 1px solid rgba(144, 46, 252, 0.3);
         }
     }
 
     &.background-orange {
         &::before {
-            background: rgba(254, 177, 1, 0.5);
+            background: rgba(254, 177, 1, 0.75);
             border: 1px solid rgba(254, 177, 1, 0.3);
         }
     }
 
     &.background-green {
         &::before {
-            background: rgba(3, 108, 91, 0.5);
+            background: rgba(3, 108, 91, 0.75);
             border: 1px solid rgba(3, 108, 91, 0.3);
         }
     }

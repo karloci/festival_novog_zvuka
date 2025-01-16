@@ -25,6 +25,6 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
 
 <style scoped>
 p {
-    font-family: 'Tisa Sans', sans-serif;
+    font-family: 'Suse', sans-serif;
 }
 </style>

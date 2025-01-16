@@ -65,12 +65,6 @@ onUnmounted(() => {
     width: 100vw;
     height: 100vh;
 
-    @media screen and (max-width: 1024px) {
-        & {
-            min-height: 768px;
-        }
-    }
-
     &::after {
         position: absolute;
         z-index: 1;
@@ -143,7 +137,7 @@ onUnmounted(() => {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-block: 60px;
+        padding-bottom: 60px;
 
         @media screen and (max-width: 768px) {
             & {
@@ -153,10 +147,9 @@ onUnmounted(() => {
 
         h1 {
             color: white;
-            font-size: 18vh;
+            font-size: 10em;
             line-height: 1;
-            letter-spacing: -20px;
-            font-family: 'PaletteMosaic', sans-serif;
+            font-family: 'Barriecito', sans-serif;
             max-width: 8ch;
             text-align: center;
             user-select: none;
@@ -164,16 +157,14 @@ onUnmounted(() => {
 
             @media screen and (max-width: 1024px) {
                 & {
-                    font-size: 10vw;
-                    letter-spacing: -10px;
+                    font-size: 8em;
                     margin-block: 1em;
                 }
             }
 
             @media screen and (max-width: 768px) {
                 & {
-                    font-size: 18vw;
-                    letter-spacing: -5px;
+                    font-size: 6em;
                 }
             }
         }

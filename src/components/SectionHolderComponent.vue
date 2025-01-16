@@ -116,7 +116,7 @@ section {
         background-color: white;
 
         &:after {
-            background-color: #1A0F39;
+            background-color: #eeecf1;
         }
 
         * {
@@ -125,14 +125,14 @@ section {
     }
 
     &.dark {
-        background-color: #1A0F39;
+        background-color: #eeecf1;
 
         &:after {
             background-color: white;
         }
 
         * {
-            color: white;
+            color: #1A0F39;
         }
     }
 

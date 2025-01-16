@@ -1,78 +1,36 @@
 @font-face {
-	font-family: 'PaletteMosaic';
+	font-family: 'PaletteMosaic'; /* above the fold */
 	src: url('../fonts/PaletteMosaic-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'RubikDistressed';
-	src: url('../fonts/RubikDistressed-Regular.ttf') format('truetype');
+	font-family: 'Barriecito'; /* above the fold */
+	src: url('../fonts/Barriecito-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Oi';
-	src: url('../fonts/oi_regular.ttf') format('truetype');
+	font-family: 'LakkiReddy'; /* above the fold ? */
+	src: url('../fonts/LakkiReddy-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Proxima Nova';
-	src: url('../fonts/proxima_nova_regular.otf') format('opentype');
+	font-family: 'Wellfleet';
+	src: url('../fonts/Wellfleet-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Proxima Nova';
-	src: url('../fonts/proxima_nova_bold.otf') format('opentype');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Proxima Nova Condensed';
-	src: url('../fonts/proxima_nova_condensed_regular.otf') format('opentype');
+	font-family: 'Suse';
+	src: url('../fonts/SUSE-VariableFont_wght.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Proxima Nova Condensed';
-	src: url('../fonts/proxima_nova_condensed_bold.otf') format('opentype');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Tisa Sans Pro';
-	src: url('../fonts/tisa_sans_pro_regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Tisa Sans Pro';
-	src: url('../fonts/tisa_sans_pro_italic.ttf') format('truetype');
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Tisa Sans Pro';
-	src: url('../fonts/tisa_sans_pro_bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Tisa Sans Pro';
-	src: url('../fonts/tisa_sans_pro_bold_italic.ttf') format('truetype');
-	font-weight: bold;
-	font-style: italic;
 }
 
 :root {
