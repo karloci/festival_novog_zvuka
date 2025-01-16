@@ -6,19 +6,27 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
 
 <template>
     <AboveTheFoldComponent/>
-    <SectionHolderComponent color-class="background-orange">
-        <p v-for="i in 10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, est illum impedit nihil optio quibusdam ratione repudiandae sed similique veritatis! Assumenda distinctio eos eveniet excepturi laborum, optio perspiciatis quisquam vel.</p>
+    <SectionHolderComponent color-class="orange-theme">
+        <div class="section-part orange-theme">
+            <h1>O festivalu</h1>
+        </div>
+        <div class="section-part orange-theme">
+            <p>Festival novog zvuka je platforma za istraživanje novih i drugačijih vidova glazbenog i interdisciplinarnog izražavanja, mjesto za predstavljanje novih skladbi i projekata mladih skladatelja.</p>
+            <p>U dva dana festivala nizom koncerata planiramo predstaviti kompozicije mladih skladatelja njihovim kolegama i široj publici.</p>
+            <p>Glavni je cilj organizatora stvoriti ugodan i razigrano-kreativan prostor koji potiče slobodu izražavanja te doprinosi razvoju nove generacije suvremenih glazbenika.</p>
+            <p>Organizator festivala je udruga UPSUS, osnovana 2013. godine u Sinju s ciljem promicanja suvremene umjetnosti izvan krugova upućenih umjetnika prema široj publici i lokalnom stanovništvu.</p>
+        </div>
     </SectionHolderComponent>
-    <SectionHolderComponent color-class="background-green" theme="dark">
+    <SectionHolderComponent color-class="green-theme" theme="dark">
         <p v-for="i in 14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, est illum impedit nihil optio quibusdam ratione repudiandae sed similique veritatis! Assumenda distinctio eos eveniet excepturi laborum, optio perspiciatis quisquam vel.</p>
     </SectionHolderComponent>
-    <SectionHolderComponent color-class="background-pink">
+    <SectionHolderComponent color-class="pink-theme">
         <p v-for="i in 12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, est illum impedit nihil optio quibusdam ratione repudiandae sed similique veritatis! Assumenda distinctio eos eveniet excepturi laborum, optio perspiciatis quisquam vel.</p>
     </SectionHolderComponent>
-    <SectionHolderComponent color-class="background-purple" theme="dark">
+    <SectionHolderComponent color-class="purple-theme" theme="dark">
         <p v-for="i in 16">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, est illum impedit nihil optio quibusdam ratione repudiandae sed similique veritatis! Assumenda distinctio eos eveniet excepturi laborum, optio perspiciatis quisquam vel.</p>
     </SectionHolderComponent>
-    <SectionHolderComponent color-class="background-blue">
+    <SectionHolderComponent color-class="blue-theme">
         <p v-for="i in 8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, est illum impedit nihil optio quibusdam ratione repudiandae sed similique veritatis! Assumenda distinctio eos eveniet excepturi laborum, optio perspiciatis quisquam vel.</p>
     </SectionHolderComponent>
 </template>

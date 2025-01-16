@@ -147,7 +147,7 @@ onUnmounted(() => {
 
         h1 {
             color: white;
-            font-size: 10em;
+            font-size: 8em;
             line-height: 1;
             font-family: 'Barriecito', sans-serif;
             max-width: 8ch;
@@ -157,14 +157,14 @@ onUnmounted(() => {
 
             @media screen and (max-width: 1024px) {
                 & {
-                    font-size: 8em;
+                    font-size: 7em;
                     margin-block: 1em;
                 }
             }
 
             @media screen and (max-width: 768px) {
                 & {
-                    font-size: 6em;
+                    font-size: 5em;
                 }
             }
         }

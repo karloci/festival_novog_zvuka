@@ -31,7 +31,7 @@ const observeSection = (entries) => {
         const viewportHeight = window.innerHeight;
 
         if (isScrollingDown) {
-            if (topPosition >= 0 && topPosition <= viewportHeight * 0.25) {
+            if (topPosition >= 0 && topPosition <= viewportHeight * 0.45) {
                 colorStore.setActiveColor(props.colorClass);
             }
         } else {
@@ -72,7 +72,7 @@ onUnmounted(() => {
 <style scoped>
 section {
     padding-top: 3em;
-    padding-bottom: calc(4em + 60px);
+    padding-bottom: calc(4em + 80px);
     position: relative;
     display: flex;
     align-items: center;
@@ -81,13 +81,13 @@ section {
 
     @media screen and (max-width: 1024px) {
         padding-top: 1em;
-        padding-bottom: calc(2em + 60px);
+        padding-bottom: calc(2em + 80px);
         padding-inline: 2em;
     }
 
     @media screen and (max-width: 768px) {
         padding-top: 0;
-        padding-bottom: calc(1em + 60px);
+        padding-bottom: calc(1em + 80px);
     }
 
     &::after {
@@ -136,7 +136,6 @@ section {
         grid-template-columns: 1fr 1fr;
         grid-gap: 2em;
         width: 1024px;
-        color: #000C24;
 
         @media screen and (max-width: 1024px) {
             grid-gap: 1em;

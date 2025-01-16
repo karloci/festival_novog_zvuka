@@ -64,7 +64,7 @@ nav {
         li a {
             color: white;
             display: block;
-            font-size: 18px;
+            font-size: 1em;
             font-family: 'Wellfleet', serif;
             text-decoration-line: none;
         }
@@ -97,35 +97,35 @@ nav {
         );
     }
 
-    &.background-blue {
+    &.blue-theme {
         &::before {
             background: rgba(3, 88, 207, 0.75);
             border: 1px solid rgba(3, 88, 207, 0.3);
         }
     }
 
-    &.background-pink {
+    &.pink-theme {
         &::before {
             background: rgba(249, 2, 156, 0.75);
             border: 1px solid rgba(249, 2, 156, 0.3);
         }
     }
 
-    &.background-purple {
+    &.purple-theme {
         &::before {
             background: rgba(144, 46, 252, 0.75);
             border: 1px solid rgba(144, 46, 252, 0.3);
         }
     }
 
-    &.background-orange {
+    &.orange-theme {
         &::before {
             background: rgba(254, 177, 1, 0.75);
             border: 1px solid rgba(254, 177, 1, 0.3);
         }
     }
 
-    &.background-green {
+    &.green-theme {
         &::before {
             background: rgba(3, 108, 91, 0.75);
             border: 1px solid rgba(3, 108, 91, 0.3);

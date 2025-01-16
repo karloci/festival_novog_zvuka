@@ -27,7 +27,12 @@
 }
 
 :root {
-
+	--color-primary: #000C24;
+	--color-blue: #0358CF;
+	--color-pink: #F9029C;
+	--color-purple: #902EFC;
+	--color-orange: #FEB101;
+	--color-green: #036C5B;
 }
 
 *,
@@ -39,7 +44,7 @@
 }
 
 body {
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1.5;
 	overflow-x: hidden;
 	background-color: #000C24;
