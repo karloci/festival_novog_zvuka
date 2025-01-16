@@ -82,6 +82,10 @@ section {
         padding-inline: 2em;
     }
 
+    @media screen and (max-width: 768px) {
+        padding-inline: 0;
+    }
+
     &:last-of-type:after {
         background-color: #000C24;
     }
@@ -99,10 +103,16 @@ section {
 
         @media screen and (max-width: 768px) {
             width: 100%;
-            display: block;
+            grid-template-columns: 1fr;
         }
 
         .content-part {
+            @media screen and (max-width: 768px) {
+                & {
+                    padding-inline: 2em;
+                }
+            }
+
             h1 {
                 font-family: 'Wellfleet', sans-serif;
                 font-size: 2.25em;
@@ -170,10 +180,37 @@ section {
             }
         }
 
-        img {
-            max-width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .image-holder {
+            @media screen and (max-width: 768px) {
+                & {
+                    position: relative;
+                }
+
+                &::before {
+                    background-color: #eeecf1;
+                    position: absolute;
+                    z-index: 1;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 60px;
+                    clip-path: polygon(
+                        0% 80%, 5% 70%, 10% 85%, 15% 65%, 20% 90%,
+                        25% 60%, 30% 85%, 35% 70%, 40% 80%, 45% 65%,
+                        50% 90%, 55% 60%, 60% 85%, 65% 70%, 70% 80%,
+                        75% 65%, 80% 90%, 85% 60%, 90% 85%, 95% 70%,
+                        100% 80%, 100% 0%, 0% 0%
+                    );
+                }
+
+            }
+
+            img {
+                max-width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
 
@@ -248,7 +285,16 @@ section {
 
             @media screen and (max-width: 768px) {
                 & {
+                    margin-block: 0;
                     padding-block: 0;
+                }
+
+                &:first-child {
+                    margin-top: 80px;
+                }
+
+                &:last-child {
+                    margin-bottom: 80px;
                 }
             }
         }

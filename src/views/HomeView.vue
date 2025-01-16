@@ -24,7 +24,9 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
             <p>Sinj pruža idealno okruženje za dva dana ispunjena glazbom, kreativnošću i druženjem. Posjetitelji će imati priliku uživati u programu koji spaja atmosferu dalmatinskog kraja i suvremenu glazbu s inovativnim umjetničkim izričajem.</p>
             <p>Program festivala odvijat će se na nekoliko pažljivo odabranih lokacija, koje će svojom akustikom i ugođajem dodatno istaknuti izvedbe. Posjetitelji mogu očekivati inspirativnu kombinaciju vrhunske glazbe i toplog gostoprimstva lokalne zajednice.</p>
         </div>
-        <img src="../graphics/sinj.png" alt="Grad Sinj">
+        <div class="image-holder">
+            <img src="../graphics/sinj.png" alt="Grad Sinj">
+        </div>
     </SectionHolderComponent>
     <SectionHolderComponent color-class="pink-theme">
         <div class="content-part pink-theme">
