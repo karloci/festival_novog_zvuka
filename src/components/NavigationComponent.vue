@@ -37,6 +37,34 @@ nav {
     align-items: center;
     justify-content: center;
 
+    ul {
+        list-style: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 3em;
+        padding: 0;
+
+        @media screen and (max-width: 768px) {
+            & {
+                gap: unset;
+                justify-content: space-between;
+                width: 100%;
+                padding-inline: 2em;
+            }
+        }
+
+        li a {
+            color: white;
+            display: block;
+            font-size: 18px;
+            font-family: 'Proxima Nova Condensed', sans-serif;
+            text-decoration-line: none;
+            text-transform: uppercase;
+        }
+    }
+
     &::before {
         position: absolute;
         z-index: -1;
@@ -45,8 +73,12 @@ nav {
         left: 0;
         width: 100%;
         height: 100px;
-        background-color: transparent;
-        transition: background-color 500ms ease-in-out;
+        background: rgba(26, 15, 57, 0.2);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(26, 15, 57, 0.3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 500ms ease-in-out, backdrop-filter 500ms ease-in-out;
         clip-path: polygon(
             0% 0%, 0% 70%, 3% 65%, 5% 80%, 7% 70%, 10% 85%,
             13% 75%, 15% 90%, 18% 65%, 20% 80%, 23% 70%,
@@ -60,52 +92,38 @@ nav {
         );
     }
 
-    ul {
-        list-style: none;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 2em;
-        padding: 0;
-
-        li a {
-            color: white;
-            display: block;
-            font-size: 18px;
-            font-family: 'Proxima Nova Condensed', sans-serif;
-            text-decoration-line: none;
-            text-transform: uppercase;
-        }
-    }
-
     &.background-blue {
         &::before {
-            background-color: #0358CF;
+            background: rgba(3, 88, 207, 0.5);
+            border: 1px solid rgba(3, 88, 207, 0.3);
         }
     }
 
     &.background-pink {
         &::before {
-            background-color: #F9029C;
+            background: rgba(249, 2, 156, 0.5);
+            border: 1px solid rgba(249, 2, 156, 0.3);
         }
     }
 
     &.background-purple {
         &::before {
-            background-color: #902EFC;
+            background: rgba(144, 46, 252, 0.5);
+            border: 1px solid rgba(144, 46, 252, 0.3);
         }
     }
 
     &.background-orange {
         &::before {
-            background-color: #FEB101;
+            background: rgba(254, 177, 1, 0.5);
+            border: 1px solid rgba(254, 177, 1, 0.3);
         }
     }
 
     &.background-green {
         &::before {
-            background-color: #036C5B;
+            background: rgba(3, 108, 91, 0.5);
+            border: 1px solid rgba(3, 108, 91, 0.3);
         }
     }
 }
