@@ -20,9 +20,6 @@ const colorStore = useColorStore();
         <li>
             <a href="#">Kontakt</a>
         </li>
-        <li>
-            <a href="#">Festival 2025.</a>
-        </li>
     </ul>
 </nav>
 </template>
@@ -36,7 +33,9 @@ nav {
     left: 0;
     background-color: transparent;
     z-index: 10;
-    padding-inline: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &::before {
         position: absolute;
@@ -72,7 +71,6 @@ nav {
 
         li a {
             color: white;
-            transition: color 500ms ease-in-out;
             display: block;
             font-size: 18px;
             font-family: 'Proxima Nova Condensed', sans-serif;
@@ -81,53 +79,33 @@ nav {
         }
     }
 
-    &.status-orange {
-        &::before {
-            background-color: #FEB101;
-        }
-
-        ul li a {
-            color: black;
-        }
-    }
-
-    &.status-pink {
-        &::before {
-            background-color: #F9029C;
-        }
-
-        ul li a {
-            color: black;
-        }
-    }
-
-    &.status-blue {
+    &.background-blue {
         &::before {
             background-color: #0358CF;
         }
+    }
 
-        ul li a {
-            color: black;
+    &.background-pink {
+        &::before {
+            background-color: #F9029C;
         }
     }
 
-    &.status-purple {
+    &.background-purple {
         &::before {
             background-color: #902EFC;
         }
+    }
 
-        ul li a {
-            color: black;
+    &.background-orange {
+        &::before {
+            background-color: #FEB101;
         }
     }
 
-    &.status-green {
+    &.background-green {
         &::before {
             background-color: #036C5B;
-        }
-
-        ul li a {
-            color: black;
         }
     }
 }

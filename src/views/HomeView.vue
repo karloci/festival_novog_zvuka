@@ -6,19 +6,19 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
 
 <template>
     <AboveTheFoldComponent/>
-    <SectionHolderComponent color-class="status-orange">
+    <SectionHolderComponent color-class="background-orange">
         <p v-for="i in 10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, est illum impedit nihil optio quibusdam ratione repudiandae sed similique veritatis! Assumenda distinctio eos eveniet excepturi laborum, optio perspiciatis quisquam vel.</p>
     </SectionHolderComponent>
-    <SectionHolderComponent theme="dark" color-class="status-pink">
+    <SectionHolderComponent color-class="background-green" theme="dark">
         <p v-for="i in 14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, est illum impedit nihil optio quibusdam ratione repudiandae sed similique veritatis! Assumenda distinctio eos eveniet excepturi laborum, optio perspiciatis quisquam vel.</p>
     </SectionHolderComponent>
-    <SectionHolderComponent color-class="status-green">
+    <SectionHolderComponent color-class="background-pink">
         <p v-for="i in 12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, est illum impedit nihil optio quibusdam ratione repudiandae sed similique veritatis! Assumenda distinctio eos eveniet excepturi laborum, optio perspiciatis quisquam vel.</p>
     </SectionHolderComponent>
-    <SectionHolderComponent theme="dark" color-class="status-purple">
+    <SectionHolderComponent color-class="background-purple" theme="dark">
         <p v-for="i in 16">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, est illum impedit nihil optio quibusdam ratione repudiandae sed similique veritatis! Assumenda distinctio eos eveniet excepturi laborum, optio perspiciatis quisquam vel.</p>
     </SectionHolderComponent>
-    <SectionHolderComponent color-class="status-blue">
+    <SectionHolderComponent color-class="background-blue">
         <p v-for="i in 8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, est illum impedit nihil optio quibusdam ratione repudiandae sed similique veritatis! Assumenda distinctio eos eveniet excepturi laborum, optio perspiciatis quisquam vel.</p>
     </SectionHolderComponent>
 </template>

@@ -17,7 +17,7 @@ const observeSection = (entries) => {
         const viewportHeight = window.innerHeight;
 
         if (isScrollingUp) {
-            if (bottomPosition >= 0 && bottomPosition <= viewportHeight * 0.25) {
+            if (bottomPosition >= 0 && bottomPosition >= viewportHeight * 0.5) {
                 colorStore.setActiveColor('transparent');
             }
         }
