@@ -16,7 +16,7 @@
 
 		&:after {
 			position: absolute;
-			content: '.';
+			content: attr(data-letter);
 			font-family: 'Wellfleet', sans-serif;
 		}
 	}

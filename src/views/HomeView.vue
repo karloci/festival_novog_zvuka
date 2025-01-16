@@ -8,7 +8,7 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
     <AboveTheFoldComponent/>
     <SectionHolderComponent color-class="orange-theme">
         <div class="section-part orange-theme">
-            <h1>O festivalu</h1>
+            <h1 data-letter=".">O festivalu</h1>
         </div>
         <div class="section-part orange-theme">
             <p>Festival novog zvuka je platforma za istraživanje novih i drugačijih vidova glazbenog i interdisciplinarnog izražavanja, mjesto za predstavljanje novih skladbi i projekata mladih skladatelja.</p>
@@ -18,10 +18,25 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
         </div>
     </SectionHolderComponent>
     <SectionHolderComponent color-class="green-theme" theme="dark">
-        <p v-for="i in 14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, est illum impedit nihil optio quibusdam ratione repudiandae sed similique veritatis! Assumenda distinctio eos eveniet excepturi laborum, optio perspiciatis quisquam vel.</p>
+        <div class="section-part green-theme">
+            <h1 data-letter="?">Gdje i kada</h1>
+            <p>Festival će se održati u siječnju 2025. godine u Sinju, živopisnom gradu bogate povijesti i kulture.</p>
+            <p>Sinj pruža idealno okruženje za dva dana ispunjena glazbom, kreativnošću i druženjem. Posjetitelji će imati priliku uživati u programu koji spaja atmosferu dalmatinskog kraja i suvremenu glazbu s inovativnim umjetničkim izričajem.</p>
+            <p>Program festivala odvijat će se na nekoliko pažljivo odabranih lokacija, koje će svojom akustikom i ugođajem dodatno istaknuti izvedbe. Posjetitelji mogu očekivati inspirativnu kombinaciju vrhunske glazbe i toplog gostoprimstva lokalne zajednice.</p>
+        </div>
+        <div class="section-part orange-theme">
+            <img src="../graphics/sinj.png" alt="Grad Sinj" style="width: 100%">
+        </div>
     </SectionHolderComponent>
     <SectionHolderComponent color-class="pink-theme">
-        <p v-for="i in 12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, est illum impedit nihil optio quibusdam ratione repudiandae sed similique veritatis! Assumenda distinctio eos eveniet excepturi laborum, optio perspiciatis quisquam vel.</p>
+        <div class="section-part pink-theme">
+            <h1 data-letter=".">Program</h1>
+        </div>
+        <div class="section-part pink-theme">
+            <p>Program festivala osmišljen je kako bi obuhvatio različite aspekte suvremene glazbe i umjetnosti.</p>
+            <p>Tijekom dva dana festivala održavat će se koncerti s premijernim izvedbama novih skladbi mladih autora, uključujući kompozicije inspirirane temom festivala – Nature Amplified.</p>
+            <p>Osim koncerata, na programu su i radionice za djecu i mlade, koje spajaju edukaciju s kreativnošću, te panel diskusije na temu suvremene umjetnosti. Festival je osmišljen kao prostor za inovaciju, razmjenu znanja i poticanje suradnje među umjetnicima.</p>
+        </div>
     </SectionHolderComponent>
     <SectionHolderComponent color-class="purple-theme" theme="dark">
         <p v-for="i in 16">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, est illum impedit nihil optio quibusdam ratione repudiandae sed similique veritatis! Assumenda distinctio eos eveniet excepturi laborum, optio perspiciatis quisquam vel.</p>
@@ -32,7 +47,5 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
 </template>
 
 <style scoped>
-p {
-    font-family: 'Suse', sans-serif;
-}
+
 </style>
