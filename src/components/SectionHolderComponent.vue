@@ -31,11 +31,11 @@ const observeSection = (entries) => {
         const viewportHeight = window.innerHeight;
 
         if (isScrollingDown) {
-            if (topPosition >= 0 && topPosition <= viewportHeight * 0.5) {
+            if (topPosition >= 0 && topPosition <= viewportHeight * 0.25) {
                 colorStore.setActiveColor(props.colorClass);
             }
         } else {
-            if (bottomPosition >= 0 && bottomPosition <= viewportHeight * 0.25) {
+            if (bottomPosition >= 0 && bottomPosition <= viewportHeight * 0.5) {
                 colorStore.setActiveColor(props.colorClass);
             }
         }
@@ -88,7 +88,6 @@ section {
     @media screen and (max-width: 768px) {
         padding-top: 0;
         padding-bottom: calc(1em + 60px);
-        padding-inline: 1em;
     }
 
     &::after {
@@ -118,10 +117,6 @@ section {
         &:after {
             background-color: #eeecf1;
         }
-
-        * {
-            color: #1A0F39;
-        }
     }
 
     &.dark {
@@ -130,10 +125,10 @@ section {
         &:after {
             background-color: white;
         }
+    }
 
-        * {
-            color: #1A0F39;
-        }
+    &:last-of-type:after {
+        background-color: #000C24;
     }
 
     .content-holder {
@@ -141,6 +136,7 @@ section {
         grid-template-columns: 1fr 1fr;
         grid-gap: 2em;
         width: 1024px;
+        color: #000C24;
 
         @media screen and (max-width: 1024px) {
             grid-gap: 1em;

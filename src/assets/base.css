@@ -13,21 +13,14 @@
 }
 
 @font-face {
-	font-family: 'LakkiReddy'; /* above the fold ? */
-	src: url('../fonts/LakkiReddy-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Wellfleet';
+	font-family: 'Wellfleet'; /* headings */
 	src: url('../fonts/Wellfleet-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Suse';
+	font-family: 'Suse'; /* paragraphs */
 	src: url('../fonts/SUSE-VariableFont_wght.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
@@ -49,4 +42,5 @@ body {
 	font-size: 16px;
 	line-height: 1.5;
 	overflow-x: hidden;
+	background-color: #000C24;
 }

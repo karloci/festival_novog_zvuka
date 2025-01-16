@@ -20,9 +20,10 @@ footer {
     align-items: center;
     justify-content: center;
     padding-inline: 4em;
-    background-color: #1A0F39;
+    background-color: #000C24;
 
     * {
+        font-family: 'Suse', sans-serif;
         color: white;
     }
 
@@ -35,7 +36,6 @@ footer {
     @media screen and (max-width: 768px) {
         padding-top: 0;
         padding-bottom: calc(1em + 60px);
-        padding-inline: 1em;
     }
 
     .content-holder {

@@ -78,9 +78,9 @@ nav {
         left: 0;
         width: 100%;
         height: 100px;
-        background: rgba(26, 15, 57, 0.2);
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(10px);
+        background: rgba(0, 12, 36, 0.1);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
         border: 1px solid rgba(26, 15, 57, 0.3);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: background-color 500ms ease-in-out, backdrop-filter 500ms ease-in-out;
