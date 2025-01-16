@@ -35,17 +35,20 @@ nav {
     z-index: 10;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding-inline: 2em;
+    justify-content: center;
+    padding-inline: 4em;
+
+    @media screen and (max-width: 1024px) {
+        padding-inline: 2em;
+    }
 
     @media screen and (max-width: 768px) {
-        & {
-            justify-content: center;
-        }
+        justify-content: center;
     }
 
     ul {
         list-style: none;
+        width: 1024px;
         height: 100%;
         display: flex;
         align-items: center;
@@ -53,12 +56,15 @@ nav {
         gap: 3em;
         padding: 0;
 
+        @media screen and (max-width: 1024px) {
+            grid-gap: 1em;
+            width: 768px;
+        }
+
         @media screen and (max-width: 768px) {
-            & {
-                gap: unset;
-                justify-content: space-between;
-                width: 100%;
-            }
+            width: 100%;
+            gap: unset;
+            justify-content: space-between;
         }
 
         li a {

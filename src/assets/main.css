@@ -12,6 +12,7 @@
 		margin-bottom: 0.5em;
 		position: relative;
 		color: var(--color-primary);
+		user-select: none;
 
 		&:after {
 			position: absolute;

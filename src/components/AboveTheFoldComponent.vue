@@ -53,7 +53,9 @@ onUnmounted(() => {
             </div>
         </div>
         <div class="title-holder">
-            <h1>Festival novog zvuka</h1>
+            <div class="title-wrap">
+                <h1>Festival novog zvuka</h1>
+            </div>
         </div>
     </section>
 </template>
@@ -61,8 +63,7 @@ onUnmounted(() => {
 <style scoped>
 .above-the-fold-container {
     position: relative;
-    background-color: #010B24;
-    width: 100vw;
+    background-color: var(--color-primary);
     height: 100vh;
 
     &::after {
@@ -95,27 +96,42 @@ onUnmounted(() => {
         left: 0;
         display: flex;
         align-items: center;
-        justify-content: center;
-        padding-block: 60px;
+        justify-content: flex-end;
+        padding-bottom: 60px;
 
         @media screen and (max-width: 768px) {
-            & {
-                align-items: flex-end;
-            }
+            align-items: flex-end;
+            justify-content: center;
         }
 
         .instruments-holder {
             display: flex;
             align-items: stretch;
-            justify-content: stretch;
+            justify-content: flex-end;
+            width: 1024px;
+
+            @media screen and (max-width: 1024px) {
+                width: 768px;
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
 
             .saxophone-image,
             .guitar-image,
             .violin-image {
                 width: calc(100% / 3);
 
+                @media screen and (max-width: 1280px) {
+                    &.saxophone-image {
+                        display: none;
+                    }
+                }
+
                 @media screen and (max-width: 768px) {
                     &.saxophone-image {
+                        display: block;
                         width: 90%;
                         margin: 0 auto;
                     }
@@ -129,7 +145,7 @@ onUnmounted(() => {
     }
 
     .title-holder {
-        position: absolute;
+        position: relative;
         width: 100%;
         height: 100%;
         top: 0;
@@ -138,6 +154,19 @@ onUnmounted(() => {
         align-items: center;
         justify-content: center;
         padding-bottom: 60px;
+        padding-inline: 4em;
+
+        @media screen and (max-width: 1024px) {
+            & {
+                padding-inline: 2em;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            & {
+                justify-content: center;
+            }
+        }
 
         @media screen and (max-width: 768px) {
             & {
@@ -145,26 +174,45 @@ onUnmounted(() => {
             }
         }
 
-        h1 {
-            color: white;
-            font-size: 8em;
-            line-height: 1;
-            font-family: 'Barriecito', sans-serif;
-            max-width: 8ch;
-            text-align: center;
-            user-select: none;
-            text-transform: uppercase;
+        .title-wrap {
+            width: 1024px;
 
             @media screen and (max-width: 1024px) {
                 & {
-                    font-size: 7em;
-                    margin-block: 1em;
+                    grid-gap: 1em;
+                    width: 768px;
                 }
             }
 
             @media screen and (max-width: 768px) {
                 & {
-                    font-size: 5em;
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            h1 {
+                color: white;
+                font-size: 8em;
+                line-height: 1;
+                font-family: 'Barriecito', sans-serif;
+                max-width: 8ch;
+                text-align: left;
+                user-select: none;
+                text-transform: uppercase;
+
+                @media screen and (max-width: 1024px) {
+                    & {
+                        font-size: 7em;
+                        margin-block: 1em;
+                    }
+                }
+
+                @media screen and (max-width: 768px) {
+                    & {
+                        font-size: 5em;
+                        text-align: center;
+                    }
                 }
             }
         }
