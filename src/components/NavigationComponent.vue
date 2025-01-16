@@ -15,9 +15,6 @@
             <a href="#">Galerija</a>
         </li>
         <li>
-            <a href="#">O festivalu</a>
-        </li>
-        <li>
             <a href="#">Kontakt</a>
         </li>
         <li>
