@@ -66,28 +66,6 @@ onUnmounted(() => {
     background-color: var(--color-primary);
     height: 100vh;
 
-    &::after {
-        position: absolute;
-        z-index: 1;
-        content: '';
-        bottom: -1px;
-        left: 0;
-        width: 100%;
-        height: 60px;
-        background: white;
-        clip-path: polygon(
-            0% 25%, 3% 35%, 5% 20%, 7% 30%, 10% 15%,
-            13% 25%, 15% 10%, 18% 35%, 20% 20%, 23% 30%,
-            25% 15%, 28% 40%, 30% 25%, 33% 35%, 35% 15%,
-            38% 30%, 40% 20%, 43% 40%, 45% 10%, 48% 35%,
-            50% 25%, 53% 30%, 55% 15%, 58% 40%, 60% 20%,
-            63% 35%, 65% 10%, 68% 30%, 70% 25%, 73% 15%,
-            75% 35%, 78% 20%, 80% 40%, 83% 30%, 85% 15%,
-            88% 25%, 90% 20%, 93% 30%, 95% 15%, 98% 35%,
-            100% 25%, 100% 100%, 0% 100%
-        );
-    }
-
     .wallpaper-holder {
         position: absolute;
         width: 100%;
@@ -154,27 +132,16 @@ onUnmounted(() => {
         align-items: center;
         justify-content: center;
         padding-bottom: 60px;
-        padding-inline: 4em;
-
-        @media screen and (max-width: 1024px) {
-            & {
-                padding-inline: 2em;
-            }
-        }
 
         @media screen and (max-width: 768px) {
             & {
                 justify-content: center;
-            }
-        }
-
-        @media screen and (max-width: 768px) {
-            & {
                 align-items: flex-start;
             }
         }
 
         .title-wrap {
+            display: flex;
             width: 1024px;
 
             @media screen and (max-width: 1024px) {
@@ -187,7 +154,8 @@ onUnmounted(() => {
             @media screen and (max-width: 768px) {
                 & {
                     width: 100%;
-                    display: block;
+                    align-items: center;
+                    justify-content: center;
                 }
             }
 

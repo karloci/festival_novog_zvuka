@@ -31,10 +31,11 @@ const observeSection = (entries) => {
         const viewportHeight = window.innerHeight;
 
         if (isScrollingDown) {
-            if (topPosition >= 0 && topPosition <= viewportHeight * 0.45) {
+            if (topPosition >= 0 && topPosition <= viewportHeight * 0.5) {
                 colorStore.setActiveColor(props.colorClass);
             }
-        } else {
+        }
+        else {
             if (bottomPosition >= 0 && bottomPosition <= viewportHeight * 0.5) {
                 colorStore.setActiveColor(props.colorClass);
             }
@@ -69,10 +70,8 @@ onUnmounted(() => {
     </section>
 </template>
 
-<style scoped>
+<style>
 section {
-    padding-top: 3em;
-    padding-bottom: calc(4em + 80px);
     position: relative;
     display: flex;
     align-items: center;
@@ -80,51 +79,7 @@ section {
     padding-inline: 4em;
 
     @media screen and (max-width: 1024px) {
-        padding-top: 1em;
-        padding-bottom: calc(2em + 80px);
         padding-inline: 2em;
-    }
-
-    @media screen and (max-width: 768px) {
-        padding-top: 0;
-        padding-bottom: calc(1em + 80px);
-    }
-
-    &::after {
-        position: absolute;
-        z-index: 1;
-        content: '';
-        bottom: -1px;
-        left: 0;
-        width: 100%;
-        height: 60px;
-        clip-path: polygon(
-            0% 25%, 3% 35%, 5% 20%, 7% 30%, 10% 15%,
-            13% 25%, 15% 10%, 18% 35%, 20% 20%, 23% 30%,
-            25% 15%, 28% 40%, 30% 25%, 33% 35%, 35% 15%,
-            38% 30%, 40% 20%, 43% 40%, 45% 10%, 48% 35%,
-            50% 25%, 53% 30%, 55% 15%, 58% 40%, 60% 20%,
-            63% 35%, 65% 10%, 68% 30%, 70% 25%, 73% 15%,
-            75% 35%, 78% 20%, 80% 40%, 83% 30%, 85% 15%,
-            88% 25%, 90% 20%, 93% 30%, 95% 15%, 98% 35%,
-            100% 25%, 100% 100%, 0% 100%
-        );
-    }
-
-    &.light {
-        background-color: white;
-
-        &:after {
-            background-color: #eeecf1;
-        }
-    }
-
-    &.dark {
-        background-color: #eeecf1;
-
-        &:after {
-            background-color: white;
-        }
     }
 
     &:last-of-type:after {
@@ -133,7 +88,7 @@ section {
 
     .content-holder {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         grid-gap: 2em;
         width: 1024px;
 
@@ -145,6 +100,157 @@ section {
         @media screen and (max-width: 768px) {
             width: 100%;
             display: block;
+        }
+
+        .content-part {
+            h1 {
+                font-family: 'Wellfleet', sans-serif;
+                font-size: 2.25em;
+                margin-bottom: 0.5em;
+                position: relative;
+                color: var(--color-primary);
+                user-select: none;
+
+                &:after {
+                    position: absolute;
+                    content: attr(data-letter);
+                    font-family: 'Wellfleet', sans-serif;
+                }
+            }
+
+            &.blue-theme {
+                h1 {
+                    &:after {
+                        color: var(--color-blue);
+                    }
+                }
+            }
+
+            &.pink-theme {
+                h1 {
+                    &:after {
+                        color: var(--color-pink);
+                    }
+                }
+            }
+
+            &.purple-theme {
+                h1 {
+                    &:after {
+                        color: var(--color-purple);
+                    }
+                }
+            }
+
+            &.orange-theme {
+                h1 {
+                    &:after {
+                        color: var(--color-orange);
+                    }
+                }
+            }
+
+            &.green-theme {
+                h1 {
+                    &:after {
+                        color: var(--color-green);
+                    }
+                }
+            }
+
+            p {
+                font-family: 'Suse', serif;
+                font-size: 1em;
+                line-height: 1.5em;
+                color: var(--color-primary);
+
+                &:not(:last-child) {
+                    margin-bottom: 1em;
+                }
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &.light {
+        background-color: white;
+
+        &::before {
+            background-color: white;
+            position: absolute;
+            z-index: 1;
+            content: '';
+            top: -59px;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            clip-path: polygon(
+                0% 25%, 3% 35%, 5% 20%, 7% 30%, 10% 15%,
+                13% 25%, 15% 10%, 18% 35%, 20% 20%, 23% 30%,
+                25% 15%, 28% 40%, 30% 25%, 33% 35%, 35% 15%,
+                38% 30%, 40% 20%, 43% 40%, 45% 10%, 48% 35%,
+                50% 25%, 53% 30%, 55% 15%, 58% 40%, 60% 20%,
+                63% 35%, 65% 10%, 68% 30%, 70% 25%, 73% 15%,
+                75% 35%, 78% 20%, 80% 40%, 83% 30%, 85% 15%,
+                88% 25%, 90% 20%, 93% 30%, 95% 15%, 98% 35%,
+                100% 25%, 100% 100%, 0% 100%
+            );
+        }
+
+        &::after {
+            background-color: white;
+            position: absolute;
+            z-index: 1;
+            content: '';
+            bottom: -59px;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            clip-path: polygon(
+                0% 75%, 3% 65%, 5% 80%, 7% 70%, 10% 85%,
+                13% 75%, 15% 90%, 18% 65%, 20% 80%, 23% 70%,
+                25% 85%, 28% 60%, 30% 75%, 33% 65%, 35% 85%,
+                38% 70%, 40% 80%, 43% 60%, 45% 90%, 48% 65%,
+                50% 75%, 53% 70%, 55% 85%, 58% 60%, 60% 80%,
+                63% 65%, 65% 90%, 68% 70%, 70% 75%, 73% 85%,
+                75% 65%, 78% 80%, 80% 60%, 83% 70%, 85% 85%,
+                88% 75%, 90% 80%, 93% 70%, 95% 85%, 98% 65%,
+                100% 75%, 100% 0%, 0% 0%
+            );
+        }
+
+        .content-part {
+            padding-block: 4em;
+
+            @media screen and (max-width: 768px) {
+                & {
+                    padding-block: 0;
+                }
+            }
+        }
+    }
+
+    &.dark {
+        background-color: #eeecf1;
+
+        &:after {
+            background-color: white;
+        }
+
+        .content-part {
+            margin-block: 60px;
+            padding-block: 4em;
+
+            @media screen and (max-width: 768px) {
+                & {
+                    padding-block: 0;
+                }
+            }
         }
     }
 }

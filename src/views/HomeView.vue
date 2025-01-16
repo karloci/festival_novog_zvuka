@@ -7,10 +7,10 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
 <template>
     <AboveTheFoldComponent/>
     <SectionHolderComponent color-class="orange-theme">
-        <div class="section-part orange-theme">
+        <div class="content-part orange-theme">
             <h1 data-letter=".">O festivalu</h1>
         </div>
-        <div class="section-part orange-theme">
+        <div class="content-part orange-theme">
             <p>Festival novog zvuka je platforma za istraživanje novih i drugačijih vidova glazbenog i interdisciplinarnog izražavanja, mjesto za predstavljanje novih skladbi i projekata mladih skladatelja.</p>
             <p>U dva dana festivala nizom koncerata planiramo predstaviti kompozicije mladih skladatelja njihovim kolegama i široj publici.</p>
             <p>Glavni je cilj organizatora stvoriti ugodan i razigrano-kreativan prostor koji potiče slobodu izražavanja te doprinosi razvoju nove generacije suvremenih glazbenika.</p>
@@ -18,20 +18,19 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
         </div>
     </SectionHolderComponent>
     <SectionHolderComponent color-class="green-theme" theme="dark">
-        <div class="section-part green-theme">
+        <div class="content-part green-theme">
             <h1 data-letter="?">Gdje i kada</h1>
-        </div>
-        <div class="section-part orange-theme">
             <p>Festival će se održati u siječnju 2025. godine u Sinju, živopisnom gradu bogate povijesti i kulture.</p>
             <p>Sinj pruža idealno okruženje za dva dana ispunjena glazbom, kreativnošću i druženjem. Posjetitelji će imati priliku uživati u programu koji spaja atmosferu dalmatinskog kraja i suvremenu glazbu s inovativnim umjetničkim izričajem.</p>
             <p>Program festivala odvijat će se na nekoliko pažljivo odabranih lokacija, koje će svojom akustikom i ugođajem dodatno istaknuti izvedbe. Posjetitelji mogu očekivati inspirativnu kombinaciju vrhunske glazbe i toplog gostoprimstva lokalne zajednice.</p>
         </div>
+        <img src="../graphics/sinj.png" alt="Grad Sinj">
     </SectionHolderComponent>
     <SectionHolderComponent color-class="pink-theme">
-        <div class="section-part pink-theme">
+        <div class="content-part pink-theme">
             <h1 data-letter=".">Program</h1>
         </div>
-        <div class="section-part pink-theme">
+        <div class="content-part pink-theme">
             <p>Program festivala osmišljen je kako bi obuhvatio različite aspekte suvremene glazbe i umjetnosti.</p>
             <p>Tijekom dva dana festivala održavat će se koncerti s premijernim izvedbama novih skladbi mladih autora, uključujući kompozicije inspirirane temom festivala – Nature Amplified.</p>
             <p>Osim koncerata, na programu su i radionice za djecu i mlade, koje spajaju edukaciju s kreativnošću, te panel diskusije na temu suvremene umjetnosti. Festival je osmišljen kao prostor za inovaciju, razmjenu znanja i poticanje suradnje među umjetnicima.</p>
