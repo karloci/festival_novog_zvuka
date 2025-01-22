@@ -15,6 +15,7 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
             <p>U tri dana festivala nizom koncerata planiramo predstaviti kompozicije mladih skladatelja njihovim kolegama i široj publici.</p>
             <p>Glavni je cilj organizatora stvoriti ugodan i razigrano-kreativan prostor koji potiče slobodu izražavanja te doprinosi razvoju nove generacije suvremenih glazbenika.</p>
             <p>Organizator festivala je udruga UPSUS, osnovana 2013. godine u Sinju s ciljem promicanja suvremene umjetnosti izvan krugova upućenih umjetnika prema široj publici i lokalnom stanovništvu.</p>
+            <p>Ulaz na sva događanja u sklopu festivala je besplatan.</p>
         </div>
     </SectionHolderComponent>
     <SectionHolderComponent color-class="green-theme" theme="dark">
@@ -34,7 +35,7 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
         </div>
         <div class="content-part pink-theme">
             <p>Program festivala osmišljen je kako bi obuhvatio različite aspekte suvremene glazbe i umjetnosti.</p>
-            <p>Tijekom tri dana festivala održavat će se koncerti s premijernim izvedbama novih skladbi mladih autora, uključujući kompozicije inspirirane temom festivala – Nature Amplified.</p>
+            <p>Tijekom tri dana festivala održavat će se koncerti s premijernim izvedbama novih skladbi mladih autora.</p>
             <p>Osim koncerata, na programu su i radionice za djecu i mlade, koje spajaju edukaciju s kreativnošću, te panel diskusije na temu suvremene umjetnosti. Festival je osmišljen kao prostor za inovaciju, razmjenu znanja i poticanje suradnje među umjetnicima.</p>
             <br>
             <div class="part-list pink-theme">
@@ -135,10 +136,7 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
             <h1 data-letter=".">Sponzori</h1>
         </div>
         <div class="content-part orange-theme">
-            <p>Festival novog zvuka je platforma za istraživanje novih i drugačijih vidova glazbenog i interdisciplinarnog izražavanja, mjesto za predstavljanje novih skladbi i projekata mladih skladatelja.</p>
-            <p>U tri dana festivala nizom koncerata planiramo predstaviti kompozicije mladih skladatelja njihovim kolegama i široj publici.</p>
-            <p>Glavni je cilj organizatora stvoriti ugodan i razigrano-kreativan prostor koji potiče slobodu izražavanja te doprinosi razvoju nove generacije suvremenih glazbenika.</p>
-            <p>Organizator festivala je udruga UPSUS, osnovana 2013. godine u Sinju s ciljem promicanja suvremene umjetnosti izvan krugova upućenih umjetnika prema široj publici i lokalnom stanovništvu.</p>
+            <p>Festival novog zvuka sufinanciran je od strane Ministarstva kulture i medija RH, Zaklade Kultura nova, Hrvatskog društva skladatelja, Grada Sinja i Turističke zajednice grada Sinja. Projekt “Nature amplified” i rezidencija NAE ansambla, podržan je od strane European Festival Found for Emerging Artist – EFFEA, inicijative European Festivals Association (EFA), sufinancirane od strane Europske unije. Projekt se ostvaruje u suradnji s partnerskim festivalima Muzički Biennale Zagreb i KotorArt International Festival.</p>
         </div>
     </SectionHolderComponent>
 </template>

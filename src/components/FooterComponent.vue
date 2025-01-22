@@ -5,16 +5,16 @@
 <template>
     <footer>
         <div class="content-holder">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque magnam maiores modi perspiciatis. Accusantium adipisci consectetur, ducimus error impedit inventore ipsam ipsum laudantium necessitatibus neque quasi voluptatum. Quia, saepe, veniam.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque magnam maiores modi perspiciatis. Accusantium adipisci consectetur, ducimus error impedit inventore ipsam ipsum laudantium necessitatibus neque quasi voluptatum. Quia, saepe, veniam.</p>
+            <p>© Festival novog zvuka 2025.</p>
+            <img src="../graphics/sponzori.png" alt="Sponzori" style="width: 100%">
         </div>
     </footer>
 </template>
 
 <style scoped>
 footer {
-    padding-top: 3em;
-    padding-bottom: calc(4em + 60px);
+    padding-top: 5em;
+    padding-bottom: 2em;
     position: relative;
     display: flex;
     align-items: center;
@@ -28,14 +28,7 @@ footer {
     }
 
     @media screen and (max-width: 1024px) {
-        padding-top: 1em;
-        padding-bottom: calc(2em + 60px);
         padding-inline: 2em;
-    }
-
-    @media screen and (max-width: 768px) {
-        padding-top: 0;
-        padding-bottom: calc(1em + 60px);
     }
 
     .content-holder {
