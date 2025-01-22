@@ -36,6 +36,50 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
             <p>Program festivala osmišljen je kako bi obuhvatio različite aspekte suvremene glazbe i umjetnosti.</p>
             <p>Tijekom dva dana festivala održavat će se koncerti s premijernim izvedbama novih skladbi mladih autora, uključujući kompozicije inspirirane temom festivala – Nature Amplified.</p>
             <p>Osim koncerata, na programu su i radionice za djecu i mlade, koje spajaju edukaciju s kreativnošću, te panel diskusije na temu suvremene umjetnosti. Festival je osmišljen kao prostor za inovaciju, razmjenu znanja i poticanje suradnje među umjetnicima.</p>
+            <br>
+            <div class="program-list">
+                <h2 data-letter="23. siječnja">Četvrtak</h2>
+                <ul>
+                    <li>
+                        <span>Digital Twin (Filip Merčep – vibrafon, Boy van Ooijen – bubanj)</span>
+                        <span>20:00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="program-list">
+                <h2 data-letter="24. siječnja">Petak</h2>
+                <ul>
+                    <li>
+                        <span>Radionica suvremene improvizacije ˝Music bus˝ (Ivana Bandalo Benzon)</span>
+                        <span>17:00 – 19:00</span>
+                    </li>
+                    <li>
+                        <span>Nae kolektiv (Tomislav Oliver – elektronika, Filip Merčep – udaraljke, Vid Veljak – violončelo, Branimir Norac – klarinet)</span>
+                        <span>20:00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="program-list">
+                <h2 data-letter="25. siječnja">Subota</h2>
+                <ul>
+                    <li>
+                        <span>Radionica suvremene improvizacije ˝Music bus˝</span>
+                        <span>10:00 – 12:00</span>
+                    </li>
+                    <li>
+                        <span>Radionica/izložba ˝Videoigranje s glazbom˝ (Digital Twin)</span>
+                        <span>10:00 – 14:00</span>
+                    </li>
+                    <li>
+                        <span>Impro koncert (prof. Ivan Božićević, Ines Vrdoljak, Melina Šišić, polaznici radionice suvremene improvizacije)</span>
+                        <span>18:30</span>
+                    </li>
+                    <li>
+                        <span>S/UMAS</span>
+                        <span>20:00</span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </SectionHolderComponent>
     <SectionHolderComponent color-class="purple-theme" theme="dark">
@@ -46,6 +90,56 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
     </SectionHolderComponent>
 </template>
 
-<style scoped>
+<style>
+.program-list {
+    &:not(:last-child) {
+        margin-bottom: 2em;
+    }
 
+    h2 {
+        font-family: 'Wellfleet', sans-serif;
+        font-size: 1.5em;
+        margin-bottom: 0.25em;
+        position: relative;
+        color: var(--color-primary);
+        user-select: none;
+
+        &:after {
+            font-size: 0.75em;
+            padding-left: 0.5em;
+            bottom: 0.2em;
+            position: absolute;
+            content: attr(data-letter);
+            color: var(--color-pink);
+            font-family: 'Wellfleet', sans-serif;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        li {
+            display: flex;
+            flex-direction: column;
+
+            span:first-child {
+                font-family: 'Suse', serif;
+                font-size: 1em;
+                line-height: 1.25em;
+                color: var(--color-primary);
+            }
+
+            span:last-child{
+                font-family: 'Suse', serif;
+                font-size: 0.75em;
+                line-height: 1.25em;
+                color: var(--color-secondary);
+            }
+        }
+    }
+}
 </style>
