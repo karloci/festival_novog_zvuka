@@ -12,7 +12,7 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
         </div>
         <div class="content-part orange-theme">
             <p>Festival novog zvuka je platforma za istraživanje novih i drugačijih vidova glazbenog i interdisciplinarnog izražavanja, mjesto za predstavljanje novih skladbi i projekata mladih skladatelja.</p>
-            <p>U dva dana festivala nizom koncerata planiramo predstaviti kompozicije mladih skladatelja njihovim kolegama i široj publici.</p>
+            <p>U tri dana festivala nizom koncerata planiramo predstaviti kompozicije mladih skladatelja njihovim kolegama i široj publici.</p>
             <p>Glavni je cilj organizatora stvoriti ugodan i razigrano-kreativan prostor koji potiče slobodu izražavanja te doprinosi razvoju nove generacije suvremenih glazbenika.</p>
             <p>Organizator festivala je udruga UPSUS, osnovana 2013. godine u Sinju s ciljem promicanja suvremene umjetnosti izvan krugova upućenih umjetnika prema široj publici i lokalnom stanovništvu.</p>
         </div>
@@ -21,11 +21,11 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
         <div class="content-part green-theme">
             <h1 data-letter="?">Gdje i kada</h1>
             <p>Festival će se održati u siječnju 2025. godine u Sinju, živopisnom gradu bogate povijesti i kulture.</p>
-            <p>Sinj pruža idealno okruženje za dva dana ispunjena glazbom, kreativnošću i druženjem. Posjetitelji će imati priliku uživati u programu koji spaja atmosferu dalmatinskog kraja i suvremenu glazbu s inovativnim umjetničkim izričajem.</p>
+            <p>Sinj pruža idealno okruženje za tri dana ispunjena glazbom, kreativnošću i druženjem. Posjetitelji će imati priliku uživati u programu koji spaja atmosferu dalmatinskog kraja i suvremenu glazbu s inovativnim umjetničkim izričajem.</p>
             <p>Program festivala odvijat će se na nekoliko pažljivo odabranih lokacija, koje će svojom akustikom i ugođajem dodatno istaknuti izvedbe. Posjetitelji mogu očekivati inspirativnu kombinaciju vrhunske glazbe i toplog gostoprimstva lokalne zajednice.</p>
         </div>
         <div class="image-holder">
-            <img src="../graphics/sinj.png" alt="Grad Sinj">
+            <img src="../graphics/sinj.jpg" alt="Grad Sinj">
         </div>
     </SectionHolderComponent>
     <SectionHolderComponent color-class="pink-theme">
@@ -34,10 +34,10 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
         </div>
         <div class="content-part pink-theme">
             <p>Program festivala osmišljen je kako bi obuhvatio različite aspekte suvremene glazbe i umjetnosti.</p>
-            <p>Tijekom dva dana festivala održavat će se koncerti s premijernim izvedbama novih skladbi mladih autora, uključujući kompozicije inspirirane temom festivala – Nature Amplified.</p>
+            <p>Tijekom tri dana festivala održavat će se koncerti s premijernim izvedbama novih skladbi mladih autora, uključujući kompozicije inspirirane temom festivala – Nature Amplified.</p>
             <p>Osim koncerata, na programu su i radionice za djecu i mlade, koje spajaju edukaciju s kreativnošću, te panel diskusije na temu suvremene umjetnosti. Festival je osmišljen kao prostor za inovaciju, razmjenu znanja i poticanje suradnje među umjetnicima.</p>
             <br>
-            <div class="program-list">
+            <div class="part-list pink-theme">
                 <h2 data-letter="23. siječnja">Četvrtak</h2>
                 <ul>
                     <li>
@@ -46,7 +46,7 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
                     </li>
                 </ul>
             </div>
-            <div class="program-list">
+            <div class="part-list pink-theme">
                 <h2 data-letter="24. siječnja">Petak</h2>
                 <ul>
                     <li>
@@ -59,7 +59,7 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
                     </li>
                 </ul>
             </div>
-            <div class="program-list">
+            <div class="part-list pink-theme">
                 <h2 data-letter="25. siječnja">Subota</h2>
                 <ul>
                     <li>
@@ -83,7 +83,52 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
         </div>
     </SectionHolderComponent>
     <SectionHolderComponent color-class="purple-theme" theme="dark">
-        <p v-for="i in 16">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, est illum impedit nihil optio quibusdam ratione repudiandae sed similique veritatis! Assumenda distinctio eos eveniet excepturi laborum, optio perspiciatis quisquam vel.</p>
+        <div class="content-part purple-theme">
+            <h1 data-letter="!">Izvođači</h1>
+            <p>Ovogodišnji program festivala će biti obogaćen brojnim poznatim imenima iz moderne glazbene industrije.</p>
+            <br>
+            <div class="part-list purple-theme">
+                <h2 class="set-color">Digital Twin</h2>
+                <ul>
+                    <li>
+                        <span><strong>Filip Merčep</strong> svojim projektima konstantno dokazuje da je osoba te umjetnik širokog spektra interesa i djelovanja. Kao koncertni umjetnik Filip je iznimno aktivan svirajući solo te uz pratnju većinu hrvatskih orkestara na svim većim domaćim festivalima i dvoranama.</span>
+                    </li>
+                    <li>
+                        <span><strong>Boy van Ooijen</strong> je aktivan kao bubnjar i producent u 12 različitih projekata svirajući po cijelom svijetu. Razvio je algoritam napisan u Pythonu koji prepoznaje elemente bubnjeva, da bi svirajući bubnjeve mogao pokretati razne vizuale, svjetla kroz DMX protokol ili za kontrolirati sintesajzera.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="part-list purple-theme">
+                <h2 class="set-color">NAE Collective</h2>
+                <ul>
+                    <li>
+                        <span>NAE Collective je ansambl kompozitora, izvođača i umjetnika novih medija posvećen stvaranju eksperimentalne umjetnosti. Osnovan je 2022. godine sa sjedištem u Zagrebu (Hrvatska). Osnivači su kompozitor i interpret “live elektronike” Tomislav Oliver, violončelist Vid Veljak, udaraljkaš Filip Merčep i klarinetist Branimir Norac.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="part-list purple-theme">
+                <h2 class="set-color">Ivan Božičević</h2>
+                <ul>
+                    <li>
+                        <span>Ivan Božičević je skladatelj, orguljaš, pijanist, aranžer i glazbeni producent. Studirao je i magistrirao kompoziciju na FMU u Beogradu u razredu Aleksandra Obradovića. Orgulje je studirao na Hochschule für Musik und darstellende Kunst u Frankfurtu kod E. Krappa, a usavršavao se u Darmstadtu i Salamanci. Kao skladatelj aktivan je od 1979. godine, a kao koncertantni orguljaš od 1989. godine.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="part-list purple-theme">
+                <h2 class="set-color">Ansambl S/UMAS</h2>
+                <ul>
+                    <li>
+                        <span>Ansambl S/UMAS osnovan je 2015. godine pri Umjetničkoj akademiji u Splitu, na inicijativu umjetničkog voditelja ansambla Gordana Tudora. Ovaj mladi ansambl ubrzo se nametnuo među specijaliziranim sastavima za izvođenje suvremene glazbe u Hrvatskoj kao jedan od najaktivnijih i najpropulzivnijih.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="image-holder">
+            <img src="../graphics/digital_twin.png" alt="Digital Twin">
+            <img src="../graphics/nae_collective.jpg" alt="NAE Collective">
+            <img src="../graphics/ivan_bozicevic.png" alt="Ivan Božičević">
+            <img src="../graphics/s_umas.jpg" alt="Ansambl S/UMAS">
+        </div>
     </SectionHolderComponent>
     <SectionHolderComponent color-class="blue-theme">
         <p v-for="i in 8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, est illum impedit nihil optio quibusdam ratione repudiandae sed similique veritatis! Assumenda distinctio eos eveniet excepturi laborum, optio perspiciatis quisquam vel.</p>
@@ -91,7 +136,7 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
 </template>
 
 <style>
-.program-list {
+.part-list {
     &:not(:last-child) {
         margin-bottom: 2em;
     }
@@ -110,8 +155,27 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
             bottom: 0.2em;
             position: absolute;
             content: attr(data-letter);
-            color: var(--color-pink);
             font-family: 'Wellfleet', sans-serif;
+        }
+    }
+
+    &.pink-theme {
+        h2 {
+            &:after {
+                color: var(--color-pink);
+            }
+        }
+    }
+
+    &.purple-theme {
+        h2 {
+            &.set-color {
+                color: var(--color-purple);
+            }
+
+            &:after {
+                color: var(--color-purple);
+            }
         }
     }
 
@@ -126,16 +190,20 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
             display: flex;
             flex-direction: column;
 
-            span:first-child {
+            span:nth-child(1) {
                 font-family: 'Suse', serif;
                 font-size: 1em;
                 line-height: 1.25em;
                 color: var(--color-primary);
+
+                strong {
+                    font-weight: bold;
+                }
             }
 
-            span:last-child{
+            span:nth-child(2) {
                 font-family: 'Suse', serif;
-                font-size: 0.75em;
+                font-size: 0.85em;
                 line-height: 1.25em;
                 color: var(--color-secondary);
             }

@@ -93,7 +93,7 @@ section {
     .content-holder {
         display: grid;
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-        grid-gap: 2em;
+        grid-column-gap: 2em;
         width: 1024px;
 
         @media screen and (max-width: 1024px) {
@@ -181,6 +181,10 @@ section {
         }
 
         .image-holder {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+
             @media screen and (max-width: 768px) {
                 & {
                     position: relative;
@@ -208,8 +212,10 @@ section {
 
             img {
                 max-width: 100%;
-                height: 100%;
+                min-width: 100%;
+                height: auto;
                 object-fit: cover;
+                filter: grayscale(85%);
             }
         }
     }
