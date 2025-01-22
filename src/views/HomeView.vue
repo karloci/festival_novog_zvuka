@@ -6,7 +6,7 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
 
 <template>
     <AboveTheFoldComponent/>
-    <SectionHolderComponent color-class="orange-theme">
+    <SectionHolderComponent color-class="orange-theme" id="o-festivalu">
         <div class="content-part orange-theme">
             <h1 data-letter=".">O festivalu</h1>
         </div>
@@ -18,7 +18,7 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
             <p>Ulaz na sva događanja u sklopu festivala je besplatan.</p>
         </div>
     </SectionHolderComponent>
-    <SectionHolderComponent color-class="green-theme" theme="dark">
+    <SectionHolderComponent color-class="green-theme" theme="dark" id="gdje-i-kada">
         <div class="content-part green-theme">
             <h1 data-letter="?">Gdje i kada</h1>
             <p>Festival će se održati u siječnju 2025. godine u Sinju, živopisnom gradu bogate povijesti i kulture.</p>
@@ -29,7 +29,7 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
             <img src="../graphics/sinj.jpg" alt="Grad Sinj">
         </div>
     </SectionHolderComponent>
-    <SectionHolderComponent color-class="pink-theme">
+    <SectionHolderComponent color-class="pink-theme" id="program">
         <div class="content-part pink-theme">
             <h1 data-letter=".">Program</h1>
         </div>
@@ -83,7 +83,7 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
             </div>
         </div>
     </SectionHolderComponent>
-    <SectionHolderComponent color-class="purple-theme" theme="dark">
+    <SectionHolderComponent color-class="purple-theme" theme="dark" id="izvodaci">
         <div class="content-part purple-theme">
             <h1 data-letter="!">Izvođači</h1>
             <p>Ovogodišnji program festivala će biti obogaćen brojnim poznatim imenima iz moderne glazbene industrije.</p>
@@ -131,7 +131,7 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
             <img src="../graphics/s_umas.jpg" alt="Ansambl S/UMAS">
         </div>
     </SectionHolderComponent>
-    <SectionHolderComponent color-class="blue-theme">
+    <SectionHolderComponent color-class="blue-theme" id="sponzori">
         <div class="content-part blue-theme">
             <h1 data-letter=".">Sponzori</h1>
         </div>

@@ -95,6 +95,7 @@ section {
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         grid-column-gap: 2em;
         width: 1024px;
+        padding-block: 2em;
 
         @media screen and (max-width: 1024px) {
             grid-gap: 1em;
@@ -104,6 +105,7 @@ section {
         @media screen and (max-width: 768px) {
             width: 100%;
             grid-template-columns: 1fr;
+            padding-block: 6em 2em;
         }
 
         .content-part {

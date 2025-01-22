@@ -1,24 +1,69 @@
 <script setup>
 import {useColorStore} from "@/stores/colorStore.js";
+import {onMounted, ref, watch} from "vue";
 
 const colorStore = useColorStore();
 
+const underline = ref();
+
+function goTo(sectionName) {
+    const section = document.getElementById(sectionName);
+
+    if (section) {
+        let scrollValue = section.offsetTop + 20;
+
+        if (section.classList.contains("dark")) {
+            if (window.innerWidth <= 768) {
+                scrollValue = scrollValue + 70;
+            }
+            else {
+                scrollValue = scrollValue + 50;
+            }
+        }
+
+        window.scrollTo({ top: scrollValue, behavior: 'smooth'});
+    }
+}
+
+function updateUnderlinePosition() {
+    const navigationTab = document.querySelector("nav ul li a.active");
+
+    if (navigationTab && underline.value) {
+        let width = navigationTab.offsetWidth;
+        let left = navigationTab.offsetLeft;
+
+        underline.value.style.width = `${width}px`;
+        underline.value.style.left = `${left}px`;
+    }
+}
+
+watch(
+    () => colorStore.activeColor,
+    () => {
+        setTimeout(updateUnderlinePosition, 0);
+    }
+);
+
+onMounted(() => {
+    setTimeout(updateUnderlinePosition, 0);
+});
 </script>
 
 <template>
 <nav :class="colorStore.activeColor">
+    <div ref="underline" class="underline" v-bind:class="{'visible': colorStore.activeColor !== 'transparent'}"></div>
     <ul>
         <li>
-            <a href="/">O festivalu</a>
+            <a href="#" @click.prevent="goTo('o-festivalu')" v-bind:class="{'active': colorStore.activeColor === 'orange-theme'}">O festivalu</a>
         </li>
         <li>
-            <a href="#">Gdje i kada</a>
+            <a href="#" @click.prevent="goTo('gdje-i-kada')" v-bind:class="{'active': colorStore.activeColor === 'green-theme'}">Gdje i kada</a>
         </li>
         <li>
-            <a href="#">Program</a>
+            <a href="#" @click.prevent="goTo('program')" v-bind:class="{'active': colorStore.activeColor === 'pink-theme'}">Program</a>
         </li>
         <li>
-            <a href="#">Izvođači</a>
+            <a href="#" @click.prevent="goTo('izvodaci')" v-bind:class="{'active': colorStore.activeColor === 'purple-theme'}">Izvođači</a>
         </li>
     </ul>
 </nav>
@@ -43,7 +88,24 @@ nav {
     }
 
     @media screen and (max-width: 768px) {
+        padding-inline: 1em;
         justify-content: center;
+    }
+
+    .underline {
+        position: absolute;
+        width: 0;
+        height: 4px;
+        border-radius: 3px;
+        background-color: white;
+        left: 0;
+        bottom: 0.5em;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+
+        &.visible {
+            opacity: 1;
+        }
     }
 
     ul {
@@ -73,6 +135,13 @@ nav {
             font-size: 1em;
             font-family: 'Wellfleet', serif;
             text-decoration-line: none;
+
+            @media screen and (max-width: 768px) {
+                & {
+                    font-size: 0.95em;
+                    letter-spacing: -1px;
+                }
+            }
         }
     }
 
