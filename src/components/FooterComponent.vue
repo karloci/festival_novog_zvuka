@@ -5,7 +5,10 @@
 <template>
     <footer>
         <div class="content-holder">
-            <p>© Festival novog zvuka 2025.</p>
+            <div class="content-part">
+                <span>© Festival novog zvuka 2025.</span>
+                <a href="mailto:festivalnovogzvuka@gmail.com">festivalnovogzvuka@gmail.com</a>
+            </div>
             <img src="../graphics/sponzori.png" alt="Sponzori" style="width: 100%">
         </div>
     </footer>
@@ -45,6 +48,11 @@ footer {
         @media screen and (max-width: 768px) {
             width: 100%;
             display: block;
+        }
+
+        .content-part {
+            display: flex;
+            flex-direction: column;
         }
     }
 }
