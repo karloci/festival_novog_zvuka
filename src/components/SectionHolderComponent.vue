@@ -195,7 +195,7 @@ section {
                     position: absolute;
                     z-index: 1;
                     content: '';
-                    top: 0;
+                    top: -1px;
                     left: 0;
                     width: 100%;
                     height: 60px;
