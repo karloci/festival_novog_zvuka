@@ -9,16 +9,16 @@ const colorStore = useColorStore();
 <nav :class="colorStore.activeColor">
     <ul>
         <li>
-            <a href="/">Početna</a>
+            <a href="/">O festivalu</a>
         </li>
         <li>
-            <a href="#">Novosti</a>
+            <a href="#">Gdje i kada</a>
         </li>
         <li>
-            <a href="#">Galerija</a>
+            <a href="#">Program</a>
         </li>
         <li>
-            <a href="#">Kontakt</a>
+            <a href="#">Izvođači</a>
         </li>
     </ul>
 </nav>

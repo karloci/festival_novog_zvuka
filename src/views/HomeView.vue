@@ -102,7 +102,7 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
                 <h2 class="set-color">NAE Collective</h2>
                 <ul>
                     <li>
-                        <span>NAE Collective je ansambl kompozitora, izvođača i umjetnika novih medija posvećen stvaranju eksperimentalne umjetnosti. Osnovan je 2022. godine sa sjedištem u Zagrebu (Hrvatska). Osnivači su kompozitor i interpret “live elektronike” Tomislav Oliver, violončelist Vid Veljak, udaraljkaš Filip Merčep i klarinetist Branimir Norac.</span>
+                        <span><strong>NAE Collective</strong> je ansambl kompozitora, izvođača i umjetnika novih medija posvećen stvaranju eksperimentalne umjetnosti. Osnovan je 2022. godine sa sjedištem u Zagrebu. Osnivači su kompozitor Tomislav Oliver, violončelist Vid Veljak, udaraljkaš Filip Merčep i klarinetist Branimir Norac.</span>
                     </li>
                 </ul>
             </div>
@@ -110,7 +110,7 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
                 <h2 class="set-color">Ivan Božičević</h2>
                 <ul>
                     <li>
-                        <span>Ivan Božičević je skladatelj, orguljaš, pijanist, aranžer i glazbeni producent. Studirao je i magistrirao kompoziciju na FMU u Beogradu u razredu Aleksandra Obradovića. Orgulje je studirao na Hochschule für Musik und darstellende Kunst u Frankfurtu kod E. Krappa, a usavršavao se u Darmstadtu i Salamanci. Kao skladatelj aktivan je od 1979. godine, a kao koncertantni orguljaš od 1989. godine.</span>
+                        <span><strong>Ivan Božičević</strong> je skladatelj, orguljaš, pijanist, aranžer i glazbeni producent. Studirao je i magistrirao kompoziciju na FMU u Beogradu u razredu Aleksandra Obradovića. Orgulje je studirao u Frankfurtu kod E. Krappa, a usavršavao se u Darmstadtu i Salamanci.</span>
                     </li>
                 </ul>
             </div>
@@ -118,7 +118,7 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
                 <h2 class="set-color">Ansambl S/UMAS</h2>
                 <ul>
                     <li>
-                        <span>Ansambl S/UMAS osnovan je 2015. godine pri Umjetničkoj akademiji u Splitu, na inicijativu umjetničkog voditelja ansambla Gordana Tudora. Ovaj mladi ansambl ubrzo se nametnuo među specijaliziranim sastavima za izvođenje suvremene glazbe u Hrvatskoj kao jedan od najaktivnijih i najpropulzivnijih.</span>
+                        <span><strong>Ansambl S/UMAS</strong> osnovan je 2015. pri Umjetničkoj akademiji u Splitu, na inicijativu umjetničkog voditelja Gordana Tudora. Ovaj mladi ansambl ubrzo se nametnuo među specijaliziranim sastavima za suvremenu glazbu u Hrvatskoj kao jedan od najaktivnijih i najpropulzivnijih.</span>
                     </li>
                 </ul>
             </div>
@@ -193,7 +193,7 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
             span:nth-child(1) {
                 font-family: 'Suse', serif;
                 font-size: 1em;
-                line-height: 1.25em;
+                line-height: 1.5em;
                 color: var(--color-primary);
 
                 strong {
@@ -204,7 +204,7 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
             span:nth-child(2) {
                 font-family: 'Suse', serif;
                 font-size: 0.85em;
-                line-height: 1.25em;
+                line-height: 1.5em;
                 color: var(--color-secondary);
             }
         }

@@ -213,7 +213,7 @@ section {
             img {
                 max-width: 100%;
                 min-width: 100%;
-                height: auto;
+                height: 100%;
                 object-fit: cover;
                 filter: grayscale(85%);
             }
