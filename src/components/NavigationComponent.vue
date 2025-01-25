@@ -54,16 +54,16 @@ onMounted(() => {
     <div ref="underline" class="underline" v-bind:class="{'visible': colorStore.activeColor !== 'transparent'}"></div>
     <ul>
         <li>
-            <a href="#" @click.prevent="goTo('o-festivalu')" v-bind:class="{'active': colorStore.activeColor === 'orange-theme'}">O festivalu</a>
-        </li>
-        <li>
-            <a href="#" @click.prevent="goTo('gdje-i-kada')" v-bind:class="{'active': colorStore.activeColor === 'green-theme'}">Gdje i kada</a>
-        </li>
-        <li>
             <a href="#" @click.prevent="goTo('program')" v-bind:class="{'active': colorStore.activeColor === 'pink-theme'}">Program</a>
         </li>
         <li>
             <a href="#" @click.prevent="goTo('izvodaci')" v-bind:class="{'active': colorStore.activeColor === 'purple-theme'}">Izvođači</a>
+        </li>
+        <li>
+            <a href="#" @click.prevent="goTo('o-festivalu')" v-bind:class="{'active': colorStore.activeColor === 'orange-theme'}">O festivalu</a>
+        </li>
+        <li>
+            <a href="#" @click.prevent="goTo('gdje-i-kada')" v-bind:class="{'active': colorStore.activeColor === 'green-theme'}">Gdje i kada</a>
         </li>
     </ul>
 </nav>

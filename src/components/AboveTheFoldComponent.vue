@@ -55,6 +55,7 @@ onUnmounted(() => {
         <div class="title-holder">
             <div class="title-wrap">
                 <h1>Festival novog zvuka</h1>
+                <span>23. - 25. siječnja - Sinj</span>
             </div>
         </div>
     </section>
@@ -142,6 +143,8 @@ onUnmounted(() => {
 
         .title-wrap {
             display: flex;
+            flex-direction: column;
+            gap: 1em;
             width: 1024px;
 
             @media screen and (max-width: 1024px) {
@@ -172,13 +175,28 @@ onUnmounted(() => {
                 @media screen and (max-width: 1024px) {
                     & {
                         font-size: 7em;
-                        margin-block: 1em;
+                        margin-top: 1em;
                     }
                 }
 
                 @media screen and (max-width: 768px) {
                     & {
                         font-size: 5em;
+                        text-align: center;
+                    }
+                }
+            }
+
+            span {
+                color: white;
+                font-size: 1em;
+                line-height: 1;
+                font-family: 'Wellfleet', serif;
+                text-align: left;
+                user-select: none;
+
+                @media screen and (max-width: 768px) {
+                    & {
                         text-align: center;
                     }
                 }

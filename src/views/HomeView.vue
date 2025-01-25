@@ -6,29 +6,6 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
 
 <template>
     <AboveTheFoldComponent/>
-    <SectionHolderComponent color-class="orange-theme" id="o-festivalu">
-        <div class="content-part orange-theme">
-            <h1 data-letter=".">O festivalu</h1>
-        </div>
-        <div class="content-part orange-theme">
-            <p>Festival novog zvuka je platforma za istraživanje novih i drugačijih vidova glazbenog i interdisciplinarnog izražavanja, mjesto za predstavljanje novih skladbi i projekata mladih skladatelja.</p>
-            <p>U tri dana festivala nizom koncerata planiramo predstaviti kompozicije mladih skladatelja njihovim kolegama i široj publici.</p>
-            <p>Glavni je cilj organizatora stvoriti ugodan i razigrano-kreativan prostor koji potiče slobodu izražavanja te doprinosi razvoju nove generacije suvremenih glazbenika.</p>
-            <p>Organizator festivala je udruga UPSUS, osnovana 2013. godine u Sinju s ciljem promicanja suvremene umjetnosti izvan krugova upućenih umjetnika prema široj publici i lokalnom stanovništvu.</p>
-            <p>Ulaz na sva događanja u sklopu festivala je besplatan.</p>
-        </div>
-    </SectionHolderComponent>
-    <SectionHolderComponent color-class="green-theme" theme="dark" id="gdje-i-kada">
-        <div class="content-part green-theme">
-            <h1 data-letter="?">Gdje i kada</h1>
-            <p>Festival će se održati u siječnju 2025. godine u Sinju, živopisnom gradu bogate povijesti i kulture.</p>
-            <p>Sinj pruža idealno okruženje za tri dana ispunjena glazbom, kreativnošću i druženjem. Posjetitelji će imati priliku uživati u programu koji spaja atmosferu dalmatinskog kraja i suvremenu glazbu s inovativnim umjetničkim izričajem.</p>
-            <p>Program festivala odvijat će se na nekoliko pažljivo odabranih lokacija, koje će svojom akustikom i ugođajem dodatno istaknuti izvedbe. Posjetitelji mogu očekivati inspirativnu kombinaciju vrhunske glazbe i toplog gostoprimstva lokalne zajednice.</p>
-        </div>
-        <div class="image-holder">
-            <img src="../graphics/sinj.jpg" alt="Grad Sinj">
-        </div>
-    </SectionHolderComponent>
     <SectionHolderComponent color-class="pink-theme" id="program">
         <div class="content-part pink-theme">
             <h1 data-letter=".">Program</h1>
@@ -129,6 +106,29 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
             <img src="../graphics/nae_collective.jpg" alt="NAE Collective">
             <img src="../graphics/ivan_bozicevic.png" alt="Ivan Božičević">
             <img src="../graphics/s_umas.jpg" alt="Ansambl S/UMAS">
+        </div>
+    </SectionHolderComponent>
+    <SectionHolderComponent color-class="orange-theme" id="o-festivalu">
+        <div class="content-part orange-theme">
+            <h1 data-letter=".">O festivalu</h1>
+        </div>
+        <div class="content-part orange-theme">
+            <p>Festival novog zvuka je platforma za istraživanje novih i drugačijih vidova glazbenog i interdisciplinarnog izražavanja, mjesto za predstavljanje novih skladbi i projekata mladih skladatelja.</p>
+            <p>U tri dana festivala nizom koncerata planiramo predstaviti kompozicije mladih skladatelja njihovim kolegama i široj publici.</p>
+            <p>Glavni je cilj organizatora stvoriti ugodan i razigrano-kreativan prostor koji potiče slobodu izražavanja te doprinosi razvoju nove generacije suvremenih glazbenika.</p>
+            <p>Organizator festivala je udruga UPSUS, osnovana 2013. godine u Sinju s ciljem promicanja suvremene umjetnosti izvan krugova upućenih umjetnika prema široj publici i lokalnom stanovništvu.</p>
+            <p>Ulaz na sva događanja u sklopu festivala je besplatan.</p>
+        </div>
+    </SectionHolderComponent>
+    <SectionHolderComponent color-class="green-theme" theme="dark" id="gdje-i-kada">
+        <div class="content-part green-theme">
+            <h1 data-letter="?">Gdje i kada</h1>
+            <p>Festival će se održati u siječnju 2025. godine u Sinju, živopisnom gradu bogate povijesti i kulture.</p>
+            <p>Sinj pruža idealno okruženje za tri dana ispunjena glazbom, kreativnošću i druženjem. Posjetitelji će imati priliku uživati u programu koji spaja atmosferu dalmatinskog kraja i suvremenu glazbu s inovativnim umjetničkim izričajem.</p>
+            <p>Program festivala odvijat će se na nekoliko pažljivo odabranih lokacija, koje će svojom akustikom i ugođajem dodatno istaknuti izvedbe. Posjetitelji mogu očekivati inspirativnu kombinaciju vrhunske glazbe i toplog gostoprimstva lokalne zajednice.</p>
+        </div>
+        <div class="image-holder">
+            <img src="../graphics/sinj.jpg" alt="Grad Sinj">
         </div>
     </SectionHolderComponent>
     <SectionHolderComponent color-class="blue-theme" id="sponzori">
