@@ -136,7 +136,32 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
             <h1 data-letter=".">Sponzori</h1>
         </div>
         <div class="content-part orange-theme">
-            <p>Festival novog zvuka sufinanciran je od strane Ministarstva kulture i medija RH, Zaklade Kultura nova, Hrvatskog društva skladatelja, Grada Sinja i Turističke zajednice grada Sinja. Projekt “Nature amplified” i rezidencija NAE ansambla, podržan je od strane European Festival Found for Emerging Artist – EFFEA, inicijative European Festivals Association (EFA), sufinancirane od strane Europske unije. Projekt se ostvaruje u suradnji s partnerskim festivalima Muzički Biennale Zagreb i KotorArt International Festival.</p>
+            <p>Festival novog zvuka sufinanciran je od strane Ministarstva kulture i medija RH, Zaklade Kultura nova, Hrvatskog društva skladatelja, Grada Sinja i Turističke zajednice grada Sinja.</p>
+            <p>U sklopu festivala realizira se i projekt “Nature amplified” te rezidencija NAE ansambla, koji dobivaju podršku prestižne inicijative European Festival Found for Emerging Artist – EFFEA, sufinancirane od Europske unije. Ovaj projekt ostvaruje se u partnerstvu s Muzičkim Biennaleom Zagreb i KotorArt International Festivalom, čime Festival Novog Zvuka dodatno osnažuje svoju međunarodnu dimenziju. Kroz ovu suradnju festival pruža priliku za razmjenu ideja, razvoj mladih umjetnika i predstavljanje inovativnih glazbenih djela široj publici, stvarajući jedinstveno kulturno iskustvo.</p>
+        </div>
+    </SectionHolderComponent>
+    <SectionHolderComponent color-class="cyclamen-theme" theme="dark" id="kontakt">
+        <div class="content-part cyclamen-theme">
+            <h1 data-letter=".">Kontakt</h1>
+            <p>U slučaju dodatnih pitanja o festivalu, suradnji ili nečemu drugome, slobodno name pošaljite upit! Nastojat ćemo Vam dati što brži odgovor.</p>
+        </div>
+        <div class="form-holder">
+            <form action="#">
+                <div class="form-group">
+                    <label for="full-name">Ime i prezime</label>
+                    <input type="text" id="full-name" name="full-name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresa e-pošte</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Poruka</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <p>Slanjem ove poruke suglasni ste s politikom obrade osobnih podataka navedenoj u <a href="#">politici privatnosti</a>.</p>
+                <button type="submit">Pošalji</button>
+            </form>
         </div>
     </SectionHolderComponent>
 </template>
@@ -213,6 +238,73 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
                 line-height: 1.5em;
                 color: var(--color-secondary);
             }
+        }
+    }
+}
+
+.form-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 4em;
+
+    @media screen and (max-width: 768px) {
+        & {
+            padding: 2em;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5em;
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 0.5em;
+
+            label {
+                font-family: 'Wellfleet', sans-serif;
+                color: var(--color-primary);
+            }
+
+            input,
+            textarea {
+                padding: 0.5em;
+                min-height: 44px;
+                border: 2px solid var(--color-cyclamen);
+                background-color: white;
+                outline: none;
+                font-size: 1em;
+                font-family: 'Suse', serif;
+            }
+        }
+
+        p {
+            font-family: 'Wellfleet', sans-serif;
+            font-size: 0.8em;
+
+            a {
+                color: var(--color-cyclamen);
+
+                &:hover {
+                    text-decoration-line: none;
+                }
+            }
+        }
+
+        button {
+            padding: 0.5em;
+            height: 44px;
+            border: 2px solid var(--color-cyclamen);
+            background-color: var(--color-cyclamen);
+            font-family: 'Wellfleet', sans-serif;
+            text-transform: uppercase;
+            color: white;
+            outline: none;
         }
     }
 }

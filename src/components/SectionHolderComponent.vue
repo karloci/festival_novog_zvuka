@@ -170,6 +170,14 @@ section {
                 }
             }
 
+            &.cyclamen-theme {
+                h1 {
+                    &:after {
+                        color: var(--color-cyclamen);
+                    }
+                }
+            }
+
             p {
                 font-family: 'Suse', serif;
                 font-size: 1em;
@@ -333,6 +341,40 @@ section {
 
                 &:last-child {
                     margin-bottom: 80px;
+                }
+            }
+        }
+
+        &:last-of-type {
+            &::after {
+                background-color: #eeecf1;
+                position: absolute;
+                z-index: 1;
+                content: '';
+                bottom: -59px;
+                left: 0;
+                width: 100%;
+                height: 60px;
+                clip-path: polygon(
+                    0% 75%, 3% 65%, 5% 80%, 7% 70%, 10% 85%,
+                    13% 75%, 15% 90%, 18% 65%, 20% 80%, 23% 70%,
+                    25% 85%, 28% 60%, 30% 75%, 33% 65%, 35% 85%,
+                    38% 70%, 40% 80%, 43% 60%, 45% 90%, 48% 65%,
+                    50% 75%, 53% 70%, 55% 85%, 58% 60%, 60% 80%,
+                    63% 65%, 65% 90%, 68% 70%, 70% 75%, 73% 85%,
+                    75% 65%, 78% 80%, 80% 60%, 83% 70%, 85% 85%,
+                    88% 75%, 90% 80%, 93% 70%, 95% 85%, 98% 65%,
+                    100% 75%, 100% 0%, 0% 0%
+                );
+            }
+
+            @media screen and (max-width: 768px) {
+                &::after {
+                    clip-path: polygon(
+                        0% 75%, 10% 80%, 20% 65%, 30% 85%, 40% 70%,
+                        50% 90%, 60% 75%, 70% 80%, 80% 65%, 90% 85%,
+                        100% 75%, 100% 0%, 0% 0%
+                    );
                 }
             }
         }

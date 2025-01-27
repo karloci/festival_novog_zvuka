@@ -35,6 +35,10 @@ function updateUnderlinePosition() {
         underline.value.style.width = `${width}px`;
         underline.value.style.left = `${left}px`;
     }
+    /*else {
+        underline.value.style.width = `0px`;
+        underline.value.style.left = `0px`;
+    }*/
 }
 
 watch(
@@ -51,7 +55,7 @@ onMounted(() => {
 
 <template>
 <nav :class="colorStore.activeColor">
-    <div ref="underline" class="underline" v-bind:class="{'visible': colorStore.activeColor !== 'transparent'}"></div>
+    <div ref="underline" class="underline" v-bind:class="{'visible': colorStore.activeColor !== 'transparent' && ['pink-theme', 'purple-theme', 'orange-theme', 'green-theme'].includes(colorStore.activeColor)}"></div>
     <ul>
         <li>
             <a href="#" @click.prevent="goTo('program')" v-bind:class="{'active': colorStore.activeColor === 'pink-theme'}">Program</a>
@@ -214,6 +218,13 @@ nav {
         &::before {
             background: rgba(3, 108, 91, 0.75);
             border: 1px solid rgba(3, 108, 91, 0.3);
+        }
+    }
+
+    &.cyclamen-theme {
+        &::before {
+            background: rgba(128, 39, 97, 0.75);
+            border: 1px solid rgba(128, 39, 97, 0.3);
         }
     }
 }
