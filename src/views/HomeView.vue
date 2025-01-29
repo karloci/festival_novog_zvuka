@@ -281,6 +281,13 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
                 font-size: 1em;
                 font-family: 'Suse', serif;
             }
+
+            input:focus,
+            textarea:focus {
+                border-color: var(--color-cyclamen);
+                outline: var(--color-cyclamen) auto 1px;
+                outline-offset: 4px;
+            }
         }
 
         p {
@@ -305,6 +312,18 @@ import SectionHolderComponent from "@/components/SectionHolderComponent.vue";
             text-transform: uppercase;
             color: white;
             outline: none;
+        }
+
+        button:focus {
+            border-color: var(--color-cyclamen);
+            outline: var(--color-cyclamen) auto 1px;
+            outline-offset: 4px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            border-color: color-mix(in srgb, var(--color-cyclamen), black 20%);
+            background-color: color-mix(in srgb, var(--color-cyclamen), black 20%);
         }
     }
 }
